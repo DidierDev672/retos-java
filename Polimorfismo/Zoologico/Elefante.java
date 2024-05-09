@@ -9,20 +9,20 @@ public class Elefante extends Animal {
 
     @Override
     public String comer() {
-        this.name = "El elefante somo come vegetales";
-        return this.name;
+        String print = "El animal " + this.name + " come vegetales.";
+        return print;
     }
 
     @Override
     public String hacerSonido() {
-        // TODO Auto-generated method stub
-        return null;
+        String printString = "El " + this.name + "  trompetea.";
+        return printString;
     }
 
     @Override
     public String moverse() {
-        // TODO Auto-generated method stub
-        return null;
+        String printMessage = "El " + this.name + "  camina lentamente";
+        return printMessage;
     }
 
 }

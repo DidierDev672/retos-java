@@ -1,18 +1,27 @@
 package Polimorfismo.Zoologico;
 
 public class Leon extends Animal {
-    @Override
-    public void hacerSonido() {
-        System.out.println("El león rugue!");
+    private String message;
+
+    public Leon(String message) {
+        this.message = message;
     }
 
     @Override
-    public void comer() {
-        System.out.println("El león come carne");
+    public String comer() {
+        String print = "Animal  " + this.message + " come semillas";
+        return print;
     }
 
     @Override
-    public void moverse() {
-        System.out.println("El león se mueve muy rápido");
+    public String hacerSonido() {
+        String pString = "El " + this.message + "  canta.";
+        return pString;
+    }
+
+    @Override
+    public String moverse() {
+        String printString = "El " + this.message + " vuela.";
+        return printString;
     }
 }

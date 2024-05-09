@@ -1,20 +1,28 @@
 package Polimorfismo.Zoologico;
 
 public class Loro extends Animal {
+    private String message;
 
-    @Override
-    public void comer() {
-        System.out.println("El loro solo come frutas");
+    public Loro(String message) {
+        this.message = message;
     }
 
     @Override
-    public void hacerSonido() {
-        System.out.println("El loro habla y habla, emita");
+    public String comer() {
+        String pString = "Animal " + this.message + " come semillas.";
+        return pString;
     }
 
     @Override
-    public void moverse() {
-        System.out.println("El loro se move muy poco");
+    public String hacerSonido() {
+        String print = "El " + this.message + " canta.";
+        return print;
+    }
+
+    @Override
+    public String moverse() {
+        String printMessage = "El " + this.message + " vuela.";
+        return printMessage;
     }
 
 }
